@@ -10,5 +10,5 @@ export default defineConfig({
       'vue': 'vue/dist/vue.esm-bundler.js'
     }
   },
-  assetsInclude: ['**/*.gpx', '**/*.kml']//要识别gpx、kml文件格式必须配
+  assetsInclude: ['**/*.gpx', '**/*.kml', '**/*.kmz']//要识别gpx、kml文件格式必须配
 })

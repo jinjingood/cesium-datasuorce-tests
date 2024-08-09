@@ -1,0 +1,132 @@
+{
+    "id": "88ae6819a474176c",
+    "name": "EGM2008",
+    "capabilities": "Image,TilesOnly,Tilemap",
+    "description": "",
+    "serviceDescription": "",
+    "server": "z2tnIkrLQ2BRzr6P",
+    "type": "ImageServer",
+    "access": "SECURE",
+    "status": "created",
+    "singleFusedMapCache": true,
+    "spatialReference": {
+        "wkid": 102100,
+        "latestWkid": 3857
+    },
+    "initialExtent": {
+        "xmin": -2.0037508342787E7,
+        "ymin": -3.024215736696229E7,
+        "xmax": 2.0037508342780832E7,
+        "ymax": 3.024215736696846E7,
+        "spatialReference": {
+            "wkid": 102100,
+            "latestWkid": 3857
+        }
+    },
+    "fullExtent": {
+        "xmin": -2.0037508342787E7,
+        "ymin": -3.024215736696229E7,
+        "xmax": 2.0037508342780832E7,
+        "ymax": 3.024215736696846E7,
+        "spatialReference": {
+            "wkid": 102100,
+            "latestWkid": 3857
+        }
+    },
+    "minScale": 5.91657527591555E8,
+    "maxScale": 9244648.868618,
+    "minLOD": 0,
+    "maxLOD": 6,
+    "tileInfo": {
+        "rows": 256,
+        "cols": 256,
+        "dpi": 96,
+        "format": "LERC",
+        "compressionQuality": 0,
+        "bandCount": 1,
+        "lercError": 0.05,
+        "storageFormat": "esriMapCacheStorageModeCompactV2",
+        "origin": {
+            "x": -2.0037508342787E7,
+            "y": 2.0037508342787E7
+        },
+        "spatialReference": {
+            "wkid": 102100,
+            "latestWkid": 3857
+        },
+        "lods": [
+            {
+                "level": 0,
+                "resolution": 156543.033928,
+                "scale": 5.91657527591555E8
+            },
+            {
+                "level": 1,
+                "resolution": 78271.5169639999,
+                "scale": 2.95828763795777E8
+            },
+            {
+                "level": 2,
+                "resolution": 39135.7584820001,
+                "scale": 1.47914381897889E8
+            },
+            {
+                "level": 3,
+                "resolution": 19567.8792409999,
+                "scale": 7.3957190948944E7
+            },
+            {
+                "level": 4,
+                "resolution": 9783.93962049996,
+                "scale": 3.6978595474472E7
+            },
+            {
+                "level": 5,
+                "resolution": 4891.96981024998,
+                "scale": 1.8489297737236E7
+            },
+            {
+                "level": 6,
+                "resolution": 2445.98490512499,
+                "scale": 9244648.868618
+            }
+        ]
+    },
+    "documentInfo": {
+        "title": "EGM2008",
+        "author": "Tam_3D",
+        "comments": "",
+        "subject": "Earth Gravity Model 2008 (EGM08): EGM08 is an interpreted grid of the spherical harmonics model of the earth's gravitational potential. \n\nData was compiled from https://earth-info.nga.mil/#tab_wgs84-data",
+        "category": "",
+        "keywords": "EGM08, EGM2008, Earth Gravity Model 2008, TiledElevationService",
+        "credits": null
+    },
+    "copyrightText": "",
+    "tileServers": null,
+    "maxExportTilesCount": 100000,
+    "exportTilesAllowed": false,
+    "serviceItemId": "5a4f9d3529a445ce860cae4f70ea617e",
+    "extent": {
+        "xmin": -2.0037508342787E7,
+        "ymin": -3.024215736696229E7,
+        "xmax": 2.0037508342780832E7,
+        "ymax": 3.024215736696846E7,
+        "spatialReference": {
+            "wkid": 102100,
+            "latestWkid": 3857
+        }
+    },
+    "currentVersion": 10.81,
+    "pixelType": "F32",
+    "serviceDataType": "esriImageServiceDataTypeElevation",
+    "cacheType": "Elevation",
+    "datasetFormat": "Cache/LERC",
+    "compressionType": "LERC",
+    "pixelSizeX": 2445.98490512499,
+    "pixelSizeY": 2445.98490512499,
+    "minPixelSize": 2445.98490512499,
+    "maxPixelSize": 156543.033928,
+    "blockWidth": 256,
+    "blockHeight": 256,
+    "bandCount": 1
+}

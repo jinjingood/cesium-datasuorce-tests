@@ -1,6 +1,7 @@
 <template>
   <div id="cesiumContainer">
     <kmlTour2_2 @change="playStop" v-if="status === 0" />
+    <CustomDatasuorce v-if="status === 1" />
   </div>
 
 </template>
@@ -9,15 +10,18 @@ import * as Cesium from 'cesium'
 import { onMounted } from 'vue';
 import kmlTour2_2 from "./components/kmlTour2_2.vue";
 import eiffel from './components/kmldata/eiffel.kml'
+import CustomDatasuorce from './components/CustomDatasuorce.vue'
 
 Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4MmUwNWJjOC0xNmZmLTRhOGUtYTEzNi1iYTM3Mjk2YzU3NmYiLCJpZCI6MTYzNzE0LCJpYXQiOjE2OTM0NjkzMDJ9.k80jNxQNVAl9ijau5Swcp1eGqUHY3mTqLScj5gr6bC4'
 let viewer = null;
 let tour = null
-let status = 0
+let status = 1
 
 onMounted(() => {
   if (status === 0) {
     getKML()
+  } else if (status === 1) {
+    getCustomData()
   }
 })
 
@@ -45,8 +49,8 @@ const playStop = (value) => {
   viewer.clock.clockStep = Cesium.ClockStep.SYSTEM_CLOCK
 }
 
-const reset = () => {
-  viewer.dataSources.removeAll();
+const getCustomData = () => {
+  viewer = new Cesium.Viewer("cesiumContainer", { infoBox: false })
 }
 </script>
 
@@ -57,5 +61,13 @@ const reset = () => {
   left: 0;
   height: 100vh;
   width: 100vw;
+}
+
+.buttons {
+  position: absolute;
+  left: 25%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
 }
 </style>
