@@ -10,13 +10,13 @@
   <!-- <Simplestyles /> -->
   <!-- <IntegratedMesh /> -->
   <!-- <TopoJson /> -->
-  <!-- <CustomDatasuorce /> -->
+  <CustomDatasuorce />
 
   <!-- 注意：这里外面没有 <div id="cesiumContainer">，而kmlTour2组件里有，类名在这能看见，所以new Cesium.Viewer还是能识别到"cesiumContainer" -->
   <!-- <kmlTour2 @change="playStop" /> -->
 
   <!-- 下面这些是有问题或完全没成功的 -->
-  <SimpleKML />
+  <!-- <SimpleKML /> -->
 </template>
 <script setup>
 // import CesiumViewer from './components/CesiumViewer.vue
@@ -27,8 +27,8 @@
 // import TopoJson from "./components/TopoJSON.vue";
 // import ThreeDLayer from "./components/ThreeDLayer.vue";
 // import kmlTour from "./components/kmlTour.vue";
-// import CustomDatasuorce from "./components/CustomDatasuorce.vue";
-import SimpleKML from './components/SimpleKML.vue'
+import CustomDatasuorce from "./components/CustomDatasuorce.vue";
+// import SimpleKML from './components/SimpleKML.vue'
 // import Simplestyles from './components/Simplestyles.vue'
 // import IntegratedMesh from './components/IntegratedMesh.vue'
 // import MultiPart from "./components/MultiPart.vue";
