@@ -9,8 +9,8 @@
   <!-- <MultiPart /> -->
   <!-- <Simplestyles /> -->
   <!-- <IntegratedMesh /> -->
-  <!-- <TopoJson /> -->
-  <CustomDatasuorce />
+  <TopoJson />
+  <!-- <CustomDatasuorce /> -->
 
   <!-- 注意：这里外面没有 <div id="cesiumContainer">，而kmlTour2组件里有，类名在这能看见，所以new Cesium.Viewer还是能识别到"cesiumContainer" -->
   <!-- <kmlTour2 @change="playStop" /> -->
@@ -24,10 +24,10 @@
 // import DataOrdering from './components/DataOrdering.vue'
 // import GPX from './components/GPX.vue'//这里的写法有点问题，在切换到symbology options时，看不到蓝色图标，被覆盖了
 // import GPX2 from './components/GPX2.vue'//这里改进了GPX的问题，按需加载了gpt数据，而不是始终全部加载，那样红色图标会覆盖在蓝色图标上
-// import TopoJson from "./components/TopoJSON.vue";
+import TopoJson from "./components/TopoJSON.vue";
 // import ThreeDLayer from "./components/ThreeDLayer.vue";
 // import kmlTour from "./components/kmlTour.vue";
-import CustomDatasuorce from "./components/CustomDatasuorce.vue";
+// import CustomDatasuorce from "./components/CustomDatasuorce.vue";
 // import SimpleKML from './components/SimpleKML.vue'
 // import Simplestyles from './components/Simplestyles.vue'
 // import IntegratedMesh from './components/IntegratedMesh.vue'
